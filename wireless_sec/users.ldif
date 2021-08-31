@@ -1,19 +1,19 @@
 #creating organizational units
 
 dn: ou=staff,dc=scj,dc=com
-obejctClass: organizationalUnit
-ou=staff
+objectClass: organizationalUnit
+ou: staff
 
 dn: ou=groups,ou=staff,dc=scj,dc=com
-obejctClass: organizationalUnit
-ou=groups
+objectClass: organizationalUnit
+ou: groups
 
 #Creating Users
 
 dn: uid=u001,ou=staff,dc=scj,dc=com
-obejctClass: inetOrgPerson
-obejctClass: organizationalPerson
-obejctClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: top
 cn: Shamal
 sn: Jayathilake
 displayName: Shamal Jayathilake
@@ -21,9 +21,9 @@ mail: shamal@scj.com
 userPassword: {SSHA}LAn3FnEvDMpfDQ7e8G+94dKWH7Sj1Pea
 
 dn: uid=u002,ou=staff,dc=scj,dc=com
-obejctClass: inetOrgPerson
-obejctClass: organizationalPerson
-obejctClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: top
 cn: Achira
 sn: Maladeniya
 displayName: Achira Maladeniya
@@ -31,9 +31,9 @@ mail: achira@scj.com
 userPassword: {SSHA}LAn3FnEvDMpfDQ7e8G+94dKWH7Sj1Pea
 
 dn: uid=u003,ou=staff,dc=scj,dc=com
-obejctClass: inetOrgPerson
-obejctClass: organizationalPerson
-obejctClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: top
 cn: Chamiru
 sn: Senarath
 displayName: Chamiru Senarath
@@ -41,9 +41,9 @@ mail: chamiru@scj.com
 userPassword: {SSHA}LAn3FnEvDMpfDQ7e8G+94dKWH7Sj1Pea
 
 dn: uid=u004,ou=staff,dc=scj,dc=com
-obejctClass: inetOrgPerson
-obejctClass: organizationalPerson
-obejctClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: top
 cn: Tharuka
 sn: Mannapperuma
 displayName: Tharuka Mannapperuma
@@ -53,15 +53,15 @@ userPassword: {SSHA}ZNk4rqkxAB+TNM0/3E4stOCURf9A3AVY
 #Creating and Adding users to the groups
 
 dn: cn=eng,ou=groups,ou=staff,dc=scj,dc=com
-obejctClass: groupOfNames
-obejctClass: top
+objectClass: groupOfNames
+objectClass: top
 cn: eng
 member: uid=u001,ou=staff,dc=scj,dc=com
 member: uid=u004,ou=staff,dc=scj,dc=com
 
 dn: cn=tech,ou=groups,ou=staff,dc=scj,dc=com
-obejctClass: groupOfNames
-obejctClass: top
+objectClass: groupOfNames
+objectClass: top
 cn: tech
 member: uid=u002,ou=staff,dc=scj,dc=com
 member: uid=u003,ou=staff,dc=scj,dc=com
